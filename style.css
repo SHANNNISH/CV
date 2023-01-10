@@ -23,9 +23,8 @@ h1 {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
+  justify-content: center;
+
   text-align: center;
   padding: 1%;
   transition: 2s;

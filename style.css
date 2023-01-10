@@ -195,7 +195,7 @@ nav {
 }
 .favourite-games__slide.active {
   border: 8px solid yellow;
-  flex: 1.9;
+  flex: 1.5;
 }
 .favourite-games__slide.active h3 {
   opacity: 1;

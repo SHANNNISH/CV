@@ -21,6 +21,9 @@ h1 {
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;

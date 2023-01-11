@@ -17,7 +17,7 @@
 
     <header>
       <nav class="menu">
-        <a href="#" class="menu__button">
+        <a href="#about-me" class="menu__button">
           <span class="menu__line menu__line_top"></span>
           <span class="menu__line menu__line_right"></span>
           <span class="menu__line menu__line_bottom"></span>
@@ -25,7 +25,7 @@
           <span>About</span>
         </a>
 
-        <a href="#" class="menu__button">
+        <a href="#skills" class="menu__button">
           <span class="menu__line menu__line_top"></span>
           <span class="menu__line menu__line_right"></span>
           <span class="menu__line menu__line_bottom"></span>
@@ -33,7 +33,7 @@
           <span>Skills</span>
         </a>
 
-        <a href="#" class="menu__button">
+        <a href="#portfolio" class="menu__button">
           <span class="menu__line menu__line_top"></span>
           <span class="menu__line menu__line_right"></span>
           <span class="menu__line menu__line_bottom"></span>
@@ -41,7 +41,7 @@
           <span>Portfolio</span>
         </a>
 
-        <a href="#" class="menu__button">
+        <a href="#favourite-games" class="menu__button">
           <span class="menu__line menu__line_top"></span>
           <span class="menu__line menu__line_right"></span>
           <span class="menu__line menu__line_bottom"></span>
@@ -49,7 +49,7 @@
           <span>Games</span>
         </a>
 
-        <a href="#" class="menu__button">
+        <a href="#contacts" class="menu__button">
           <span class="menu__line menu__line_top"></span>
           <span class="menu__line menu__line_right"></span>
           <span class="menu__line menu__line_bottom"></span>
@@ -61,42 +61,82 @@
       <div class="vector"></div>
 
       <div class="header__biography">
-        <p class="header__biography_profession">Frontend developer</p>
+        <p class="header__biography_profession">Frontend<br />developer</p>
         <p class="header__biography_name">
           Yaroslav Klishevich<br />20 years old
         </p>
-        <p class="header__biography_city">Minsk</p>
+        <p class="header__biography_city">
+          Belarus <br />
+          Minsk
+        </p>
       </div>
 
       <div class="vector"></div>
     </header>
 
-    <section class="about-me">
+    <section id="about-me" class="about-me">
       <h1>About me</h1>
-      <p>
-        Hi, I'm Yaroslav - Frontend developer from Minsk. <br />I'm interested
-        in programming and everythong connected with it. <br />
-        Ready to implement excellent projects with wonderful people.
-      </p>
+      <div class="about-me__flex-container">
+        <div class="about-me__left-side">
+          <h3>Main information</h3>
+          Hi, I'm Yaroslav - Frontend developer from Minsk. I'm interested in
+          programming and everythong connected with it. Ready to implement
+          excellent projects with wonderful people. I constantly strive for new
+          knowledge and develop in the field of Frontend development.
+        </div>
+        <div class="about-me__central-side">
+          <img class="about-me__photo" src="img/my_photo2.jpg" alt="" />
+        </div>
+        <div class="about-me__right-side">
+          <p>
+            <h3>Hobbies</h3>
+            In my spare time, I play computer games, go in for sports, and also
+            work on improving my English. Computer games are my favorite hobby,
+            so I have played over 150 games. My favourite games is: The Witcher
+            3, Red Dead Redemption 2 and Detroit:Become Human.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
       <div class="vector"></div>
       <h1>Skills</h1>
       <p>I work with technologies such as</p>
       <div class="skills__icons">
-        <img class="skills__icon" src="svg/icon_html.svg" alt="htlm" />
-        <img class="skills__icon" src="svg/icon_javascript.svg" alt="js" />
-        <img class="skills__icon" src="svg/icon_css.svg" alt="css" />
+        <div class="skills__icon_container">
+          <img class="skills__icon" src="svg/icon_html.svg" alt="htlm" />
+          <h3>HTML</h3>
+        </div>
+        <div class="skills__icon_container">
+          <img class="skills__icon" src="svg/icon_javascript.svg" alt="js" />
+          <h3>Javascript</h3>
+        </div>
+        <div class="skills__icon_container">
+          <img class="skills__icon" src="svg/icon_css.svg" alt="css" />
+          <h3>CSS</h3>
+        </div>
+        <div class="skills__icon_container">
+          <img class="skills__icon" src="svg/React-icon.svg.png" alt="css" />
+          <h3>React</h3>
+        </div>
+        <div class="skills__icon_container">
+          <img class="skills__icon" src="svg/Git_icon.svg.png" alt="css" />
+          <h3>Git</h3>
+        </div>
+        <div class="skills__icon_container">
+          <img class="skills__icon" src="svg/Sass_logo.png" alt="css" />
+          <h3>Sass</h3>
+        </div>
       </div>
       <div class="vector"></div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <h1>Portfolio</h1>
     </section>
 
-    <section class="favourite-games">
+    <section id="favourite-games" class="favourite-games">
       <div class="vector"></div>
       <div class="favourite-games__list">
         <h1>Favourite games</h1>
@@ -125,7 +165,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <div class="vector"></div>
       <div class="contacts__contant">
         <h1>Contacts</h1>

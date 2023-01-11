@@ -5,6 +5,7 @@
 }
 
 body {
+  box-sizing: border-box;
   text-align: center;
   font-family: "Cormorant SC", serif;
   font-size: 20px;
@@ -33,7 +34,6 @@ nav {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  align-content: center;
   justify-content: space-between;
   font-size: 28px;
 }
@@ -118,16 +118,31 @@ nav {
 }
 .about-me {
   line-height: 50px;
-  padding: 1%;
+  padding: 0%;
+}
+.about-me__flex-container {
+  gap: 15%;
+  display: flex;
+  justify-content: center;
 }
 
+.about-me__photo {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  border: 3px solid var(--main_color);
+}
 .skills__icons {
-  padding: 2% 0%;
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+  /* grid-template-rows: 33.333% 33.333% 33.333%; */
+
+  grid-gap: 10px;
+  padding: 2% 2%;
 }
 .skills__icon {
-  display: inline-block;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 3%;
   height: 133px;
   width: 133px;
 }
@@ -135,7 +150,9 @@ nav {
   transition: 0.3s;
   transform: scale(1.1);
 }
-
+.skills__icon_container {
+  border: 1px solid white;
+}
 .button-send-message {
   background-color: black;
   border: 2px solid var(--main_color);

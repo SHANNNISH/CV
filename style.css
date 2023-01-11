@@ -117,13 +117,14 @@ nav {
   border: 1px solid var(--main_color);
 }
 .about-me {
-  line-height: 50px;
+  line-height: 40px;
   padding: 0%;
 }
 .about-me__flex-container {
   gap: 2%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-me__photo {
@@ -137,9 +138,6 @@ nav {
   display: grid;
   grid-template-columns: 33.3333% 33.3333% 33.3333%;
   /* grid-template-rows: 33.333% 33.333% 33.333%; */
-
-  grid-gap: 10px;
-  padding: 2% 2%;
 }
 .skills__icon {
   padding: 3%;
@@ -172,16 +170,17 @@ nav {
 }
 
 .social-media__icon {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   color: var(--main_color);
   background-color: var(--main_color);
   margin: 2%;
   border-radius: 10%;
   border: 2px solid var(--main_color);
+  transition: 0.3s;
 }
 .social-media__icon:hover {
-  box-shadow: 0px 0px 25px var(--main_color);
+  box-shadow: 0px 0px 15px var(--main_color);
   transition: 0.3s;
   transform: scale(1.1);
 }

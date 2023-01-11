@@ -121,7 +121,7 @@ nav {
   padding: 0%;
 }
 .about-me__flex-container {
-  gap: 15%;
+  gap: 2%;
   display: flex;
   justify-content: center;
 }

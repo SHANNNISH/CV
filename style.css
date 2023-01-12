@@ -117,11 +117,16 @@ nav {
   border: 1px solid var(--main_color);
 }
 .about-me {
-  line-height: 40px;
-  padding: 0%;
+  margin-bottom: 2%;
+}
+.about-me__right-side {
+  padding: 2%;
+}
+.about-me__left-side {
+  padding: 2%;
 }
 .about-me__flex-container {
-  gap: 2%;
+  /* gap: 15%; */
   display: flex;
   justify-content: center;
   align-items: center;

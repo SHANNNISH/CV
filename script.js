@@ -13,3 +13,19 @@ function clearActiveClasses() {
     slide.classList.remove("active");
   });
 }
+
+const slidesPortfolio = document.querySelectorAll(".portfolio__slide");
+
+for (const slidePortfolio of slidesPortfolio) {
+  slidePortfolio.addEventListener("click", () => {
+    clearActiveClasses();
+
+    slidePortfolio.classList.add("active");
+  });
+}
+
+function clearActiveClasses() {
+  slidesPortfolio.forEach((slidePortfolio) => {
+    slidePortfolio.classList.remove("active");
+  });
+}

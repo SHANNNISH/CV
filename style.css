@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap");
 
+@media (max-width: 600px) {
+}
 :root {
   --main_color: rgb(255, 255, 255);
 }
@@ -155,6 +157,7 @@ nav {
   transition: 0.3s;
   transform: scale(1.1);
 }
+
 .skills__icon_container {
   border: 1px solid white;
 }
@@ -219,16 +222,27 @@ nav {
   border: 8px solid yellow;
   flex: 1.5;
 }
-.favourite-games__slide.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+
+.portfolio__container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
 }
-.favourite-games__slide h3 {
-  color: black;
-  position: absolute;
-  font-size: 24px;
-  top: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
+.portfolio__slide {
+  height: 50vh;
+  border-radius: 20px;
+  border: 8px solid var(--main_color);
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+.portfolio__slide.active {
+  border: 8px solid yellow;
+  flex: 1.5;
 }

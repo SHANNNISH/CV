@@ -120,9 +120,11 @@ nav {
   margin-bottom: 2%;
 }
 .about-me__right-side {
+  width: 30%;
   padding: 2%;
 }
 .about-me__left-side {
+  width: 30%;
   padding: 2%;
 }
 .about-me__flex-container {

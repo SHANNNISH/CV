@@ -18,13 +18,13 @@ const slidesPortfolio = document.querySelectorAll(".portfolio__slide");
 
 for (const slidePortfolio of slidesPortfolio) {
   slidePortfolio.addEventListener("click", () => {
-    clearActiveClasses();
+    clearActiveClassesPortfolio();
 
     slidePortfolio.classList.add("active");
   });
 }
 
-function clearActiveClasses() {
+function clearActiveClassesPortfolio() {
   slidesPortfolio.forEach((slidePortfolio) => {
     slidePortfolio.classList.remove("active");
   });

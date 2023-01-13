@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap");
 
-@media (max-width: 600px) {
-}
 :root {
   --main_color: rgb(255, 255, 255);
 }
@@ -18,8 +16,11 @@ body {
   padding-left: 15%;
   padding-right: 15%;
 }
-
+h3 {
+  font-size: 22px;
+}
 h1 {
+  margin: 1%;
   font-size: 40px;
 }
 
@@ -37,13 +38,14 @@ nav {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .menu__button {
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 15px 30px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px 30px;
   position: relative;
   display: inline-block;
   color: var(--main_color);
@@ -59,7 +61,9 @@ nav {
   position: absolute;
   display: block;
 }
-
+.menu {
+  text-align: center;
+}
 .menu__line_top {
   top: 0;
   left: -100%;
@@ -122,15 +126,14 @@ nav {
   margin-bottom: 2%;
 }
 .about-me__right-side {
-  width: 30%;
+  width: 100%;
   padding: 2%;
 }
 .about-me__left-side {
-  width: 30%;
+  width: 100%;
   padding: 2%;
 }
 .about-me__flex-container {
-  /* gap: 15%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,8 +141,8 @@ nav {
 
 .about-me__photo {
   border-radius: 50%;
-  height: 300px;
-  width: 300px;
+  height: 260px;
+  width: 260px;
   border: 3px solid var(--main_color);
 }
 .skills__icons {
@@ -160,31 +163,12 @@ nav {
 }
 
 .skills__icon_container {
-  border: 1px solid white;
-}
-.button-send-message {
-  background-color: black;
-  border: 2px solid var(--main_color);
-  border-radius: 30px;
-  height: 70px;
-  width: 270px;
-  color: var(--main_color);
-  font-size: 36px;
-  margin: 2%;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.button-send-message:hover {
-  color: black;
-  background-color: var(--main_color);
-  transition: 0.3s;
-  box-shadow: 0px 0px 10px var(--main_color);
-  transform: scale(1.1);
+  border: 1px solid var(--main_color);
 }
 
 .social-media__icon {
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   color: var(--main_color);
   background-color: var(--main_color);
   margin: 2%;
@@ -253,4 +237,172 @@ nav {
 .portfolio__slide.active {
   border: 8px solid yellow;
   flex: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .about-me__left-side {
+    padding: 1%;
+  }
+  .about-me__right-side {
+    padding: 1%;
+  }
+  .about-me__photo {
+    height: 200px;
+    width: 200px;
+  }
+  .social-media__icon {
+    width: 60px;
+    height: 60px;
+  }
+  .favourite-games__container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .favourite-games__slide {
+    height: 40vh;
+  }
+
+  .portfolio__container {
+    margin: 0;
+    padding: 0;
+  }
+  .portfolio__slide {
+    height: 40vh;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .header__biography {
+    font-size: 20px;
+  }
+  .menu__button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .social-media__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .favourite-games__container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .favourite-games__slide {
+    height: 30vh;
+  }
+
+  .portfolio__container {
+    margin: 0;
+    padding: 0;
+  }
+  .portfolio__slide {
+    height: 30vh;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .skills__icon {
+    height: 110px;
+    width: 110px;
+  }
+  p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+  .about-me__right-side {
+    padding: 2%;
+    width: 100%;
+  }
+  .about-me__left-side {
+    padding: 2%;
+    width: 100%;
+  }
+  .about-me__photo {
+    height: 160px;
+    width: 160px;
+  }
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .header__biography {
+    margin: auto;
+    font-size: 18px;
+    padding: 5px 5px;
+  }
+  .menu__button {
+    margin: auto;
+    font-size: 18px;
+
+    padding: 5px 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 18px;
+  }
+  .social-media__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .favourite-games__container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .favourite-games__slide {
+    height: 20vh;
+  }
+
+  .portfolio__container {
+    margin: 0;
+    padding: 0;
+  }
+  .portfolio__slide {
+    height: 20vh;
+  }
+  .skills__icon {
+    height: 80px;
+    width: 80px;
+  }
+  body {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .menu__button {
+    letter-spacing: 2px;
+    margin: auto;
+    font-size: 12px;
+    padding: 5px 5px;
+  }
+  .about-me__right-side {
+    font-size: 14px;
+    padding: 2%;
+    width: 100%;
+  }
+  .about-me__left-side {
+    font-size: 14px;
+    padding: 2%;
+    width: 100%;
+  }
+  .about-me__photo {
+    height: 100px;
+    width: 100px;
+  }
+  h1 {
+    margin: 0;
+  }
 }

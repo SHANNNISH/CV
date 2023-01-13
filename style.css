@@ -123,26 +123,23 @@ nav {
   border: 1px solid var(--main_color);
 }
 .about-me {
+  text-align: center;
   margin-bottom: 2%;
 }
-.about-me__right-side {
-  width: 100%;
-  padding: 2%;
-}
-.about-me__left-side {
-  width: 100%;
-  padding: 2%;
+.about-me__text {
+  text-align: center;
+  width: 60%;
+  letter-spacing: 2px;
 }
 .about-me__flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .about-me__photo {
   border-radius: 50%;
-  height: 260px;
-  width: 260px;
+  height: 180px;
+  width: 180px;
   border: 3px solid var(--main_color);
 }
 .skills__icons {
@@ -240,11 +237,9 @@ nav {
 }
 
 @media (max-width: 1200px) {
-  .about-me__left-side {
-    padding: 1%;
-  }
-  .about-me__right-side {
-    padding: 1%;
+  .about-me__text {
+    width: 70%;
+    letter-spacing: 2px;
   }
   .about-me__photo {
     height: 200px;
@@ -286,6 +281,10 @@ nav {
 }
 
 @media (max-width: 992px) {
+  .about-me__text {
+    width: 80%;
+    letter-spacing: 2px;
+  }
   .social-media__icon {
     width: 40px;
     height: 40px;
@@ -350,6 +349,10 @@ nav {
 }
 
 @media (max-width: 576px) {
+  .about-me__text {
+    width: 90%;
+    letter-spacing: 1px;
+  }
   h3 {
     font-size: 18px;
   }
